@@ -1,7 +1,7 @@
 import {h} from "preact"
 import { useContext } from "preact/hooks"
 import SettingsContext from "../../SettingsContext"
-import Loader from "vporel/components/Loader"
+import Loader from "@vporel/react/components/Loader"
 import Setting from "./Setting"
 
 export default function List(){

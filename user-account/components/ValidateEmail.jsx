@@ -1,15 +1,15 @@
 import {Fragment, h} from "preact"
-import _ from "vporel/translator"
+import _ from "@vporel/js/translator"
 import { useCallback, useContext, useState} from "preact/hooks"
 import { sendEmailValidationCode, validateEmail, changeEmail as serverChangeEmail } from "../api"
 import { Modal } from "react-bootstrap"
-import { ButtonLight, ButtonPrimary } from "vporel/components/Button"
+import { ButtonLight, ButtonPrimary } from "@vporel/react/components/Button"
 import { InputAdornment, TextField } from "@mui/material"
 import { userSignal } from "~/globals"
-import FlexCenter from "vporel/components/display/FlexCenter"
+import FlexCenter from "@vporel/react/components/FlexCenter"
 import { signal } from "@preact/signals"
-import validators from "vporel/validators"
-import ToastContext from "vporel/contexts/ToastContext"
+import validators from "@vporel/js/validators"
+import ToastContext from "@vporel/react/contexts/ToastContext"
 
 const time = signal(60)
 let timer 

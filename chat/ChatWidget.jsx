@@ -1,6 +1,6 @@
 import {h} from 'preact'
 import { Image } from 'react-bootstrap'
-import FlexCenter from 'vporel/components/display/FlexCenter'
+import FlexCenter from '@vporel/react/components/FlexCenter'
 
 export default function ChatWidget({chat, onSelect, selected, unreadMessagesCount, imageSrc, title}){
     const lastMessage = chat.messages.length > 0 ? chat.messages[chat.messages.length-1] : null

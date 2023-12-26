@@ -1,11 +1,11 @@
-import _ from "vporel/translator"
+import _ from "@vporel/js/translator"
 import React, { Fragment, useCallback, useContext, useState}  from "react"
 import { checkPasswordResetCode, sendPasswordResetCode, resetPassword as serverResetPassword } from "../api"
 import { Modal } from "react-bootstrap"
-import { ButtonPrimary } from "vporel/components/Button"
+import { ButtonPrimary } from "@vporel/react/components/Button"
 import { InputAdornment, TextField } from "@mui/material"
-import validators from "vporel/validators"
-import ToastContext from "vporel/contexts/ToastContext"
+import validators from "@vporel/js/validators"
+import ToastContext from "@vporel/react/contexts/ToastContext"
 import { userValidators } from "../validators"
 
 

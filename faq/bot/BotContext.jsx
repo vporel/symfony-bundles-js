@@ -1,6 +1,6 @@
 import { h, createContext } from "preact";
 import { useCallback, useEffect } from "preact/hooks";
-import { onMobile } from "vporel/standard";
+import { onMobile } from "@vporel/js/standard";
 
 const BotContext = createContext({})
 

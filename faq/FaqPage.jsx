@@ -4,7 +4,7 @@ import { useFaq } from "./hooks"
 import { Accordion, AccordionDetails, AccordionSummary, Tab, Tabs, Typography } from "@mui/material"
 import parse from "html-react-parser"
 import { Link } from "react-router-dom"
-import Loader from "vporel/components/Loader"
+import Loader from "@vporel/react/components/Loader"
 import AppContext from "../root/AppContext"
 
 export default function FaqPage({pageTitle = "FAQ des utilisateurs", contactUrl}){

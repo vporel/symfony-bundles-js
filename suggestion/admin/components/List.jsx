@@ -1,9 +1,9 @@
 import {h} from "preact"
 import { useCallback, useContext, useState } from "preact/hooks"
 import SuggestionContext from "../../SuggestionContext"
-import Loader from "vporel/components/Loader"
+import Loader from "@vporel/react/components/Loader"
 import Suggestion from "./Suggestion"
-import { ButtonDanger } from "vporel/components/Button"
+import { ButtonDanger } from "@vporel/react/components/Button"
 
 export default function List(){
     const {suggestions} = useContext(SuggestionContext)

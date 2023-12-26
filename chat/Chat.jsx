@@ -5,13 +5,13 @@ import { useCallback, useContext, useEffect, useMemo, useState } from "preact/ho
 import Messages from "./Messages"
 import Chats from "./Chats"
 import { getChats, markChatMessagesSeen as serverMarkChatMessagesSeen, newChat, getChat } from "./api"
-import { useToggle } from "vporel/hooks"
-import { ButtonPrimary } from "vporel/components/Button"
+import { useToggle } from "@vporel/react/hooks"
+import { ButtonPrimary } from "@vporel/react/components/Button"
 import { getSocket } from "~/socket-io"
 import AppContext from "../root/AppContext"
-import FloatingComponent from "vporel/components/FloatingComponent"
+import FloatingComponent from "@vporel/react/components/FloatingComponent"
 import ChatContext from "./ChatContext"
-import FloatingComponentOpener from "vporel/components/FloatingComponentOpener"
+import FloatingComponentOpener from "@vporel/react/components/FloatingComponentOpener"
 import ChatLayout from "./ChatLayout"
 
 async function serverCreateNewChat(receiver){

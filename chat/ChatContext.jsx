@@ -1,8 +1,8 @@
 import { h, createContext } from "preact";
 import { useCallback, useEffect, useState } from "preact/hooks";
 import Chat from "./Chat";
-import { onMobile } from "vporel/standard";
-import { useSearchParams } from "vporel/hooks";
+import { onMobile } from "@vporel/js/standard";
+import { useSearchParams } from "@vporel/react/hooks";
 
 const ChatContext = createContext({})
 

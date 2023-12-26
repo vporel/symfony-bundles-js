@@ -1,8 +1,8 @@
 import {Fragment, h} from "preact"
-import _ from "vporel/translator"
+import _ from "@vporel/js/translator"
 import { userSignal } from "~/globals"
 import { format } from "date-fns"
-import { parseDate } from "vporel/date"
+import { parseDate } from "@vporel/js/date"
 import { Box } from "@mui/material"
 
 const containerClasses = highlight => "rounded-2 "+(highlight ? "bg-primary text-white" : "bg-rgb240")

@@ -1,5 +1,5 @@
 import { h } from "preact"
-import FlexCenter from "vporel/components/display/FlexCenter"
+import FlexCenter from "@vporel/react/components/FlexCenter"
 import { useContext, useEffect } from "preact/hooks"
 import AppContext from "../AppContext"
 

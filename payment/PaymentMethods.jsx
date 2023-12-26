@@ -1,9 +1,9 @@
 import { Fragment, h } from "preact"
 import { useCallback, useMemo, useState } from "preact/hooks"
-import _ from "vporel/translator"
+import _ from "@vporel/js/translator"
 import { cancelCurrentPayment as apiCancelCurrentPayment } from "./api"
-import Loader from "vporel/components/Loader"
-import { ButtonDanger, ButtonPrimary } from "vporel/components/Button"
+import Loader from "@vporel/react/components/Loader"
+import { ButtonDanger, ButtonPrimary } from "@vporel/react/components/Button"
 import { TextField } from "@mui/material"
 import { phoneNumberValidators } from "../../validators"
 

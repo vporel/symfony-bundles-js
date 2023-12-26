@@ -1,5 +1,5 @@
 import {Fragment, h} from 'preact'
-import FloatingComponentOpener from 'vporel/components/FloatingComponentOpener'
+import FloatingComponentOpener from '@vporel/react/components/FloatingComponentOpener'
 
 export default function ChatLayout({
     visible, setVisible, selectedChat, title, ChatsElement, MessagesElement,

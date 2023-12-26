@@ -1,8 +1,8 @@
 import { h } from "preact"
 import { useCallback, useContext, useEffect, useState } from "preact/hooks"
 import { MenuItem, TextField } from "@mui/material"
-import { ButtonPrimary } from "vporel/components/Button"
-import ToastContext from "vporel/contexts/ToastContext"
+import { ButtonPrimary } from "@vporel/react/components/Button"
+import ToastContext from "@vporel/react/contexts/ToastContext"
 import { createSuggestion } from "../api"
 import AppContext from "../../root/AppContext"
 

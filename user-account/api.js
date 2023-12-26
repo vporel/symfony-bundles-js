@@ -1,4 +1,4 @@
-import { post } from "vporel/api"
+import { post } from "@vporel/js/api"
 
 export async function sendEmailValidationCode(){
     return await post("/api/account/send-email-validation-code")

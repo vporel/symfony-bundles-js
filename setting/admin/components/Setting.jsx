@@ -1,10 +1,10 @@
 import {Fragment, h} from "preact"
-import { ButtonLight, ButtonPrimary } from "vporel/components/Button"
+import { ButtonLight, ButtonPrimary } from "@vporel/react/components/Button"
 import { useCallback, useContext, useState } from "preact/hooks"
 import SettingsContext from "../../SettingsContext"
-import { useToggle } from "vporel/hooks"
+import { useToggle } from "@vporel/react/hooks"
 import { Form } from "react-bootstrap"
-import { FilesUploadBox } from "vporel/components/FilesUploadBox"
+import { FilesUploadBox } from "@vporel/react/components/FilesUploadBox"
 
 function Value({setting}){
     if(setting.type == "image"){

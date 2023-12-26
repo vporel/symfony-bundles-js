@@ -1,5 +1,5 @@
 import {Fragment, h} from "preact"
-import FloatingComponent from "vporel/components/FloatingComponent"
+import FloatingComponent from "@vporel/react/components/FloatingComponent"
 import Messages from "./Messages"
 import { BotContextProvider } from "./BotContext"
 import FaqChatBot from "./FaqChatBot"

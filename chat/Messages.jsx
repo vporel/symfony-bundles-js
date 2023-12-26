@@ -1,12 +1,12 @@
 import {Fragment, h} from "preact"
-import FlexCenter from "vporel/components/display/FlexCenter"
-import _ from "vporel/translator"
-import LittleTextForm from "vporel/components/LittleTextForm"
+import FlexCenter from "@vporel/react/components/FlexCenter"
+import _ from "@vporel/js/translator"
+import LittleTextForm from "@vporel/react/components/LittleTextForm"
 import { useCallback, useEffect } from "preact/hooks"
 import { sendMessage as serverSendMessage } from "./api"
 import { userSignal } from "~/globals"
 import { format } from "date-fns"
-import { parseDate } from "vporel/date"
+import { parseDate } from "@vporel/js/date"
 
 function MessageWidget({message}){
     return <div className={"d-flex px-2 py-1"+(message.sender.id == userSignal.value.id ? " justify-content-end" : "")}>

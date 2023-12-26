@@ -2,7 +2,7 @@ import { Checkbox, FormControlLabel, FormGroup, InputAdornment, TextField, Theme
 import { THEME, MUI_THEME, generalStyle } from '../globals'
 import React, { useState } from 'react'
 import PasswordForgotten from '../components/PasswordForgotten'
-import { ToastContextProvider } from 'vporel/contexts/ToastContext'
+import { ToastContextProvider } from '@vporel/react/contexts/ToastContext'
 
 export default function LoginPage(){
     //constants defined in the page header

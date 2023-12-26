@@ -1,5 +1,5 @@
 {
-  "name": "vporel-symfony-bundles",
+  "name": "@vporel/symfony-bundles",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

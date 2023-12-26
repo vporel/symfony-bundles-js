@@ -6,15 +6,15 @@
 import {Fragment, h} from 'preact'
 import {useState, useEffect, useRef, useCallback} from 'preact/hooks'
 import { getNotifications, markNotificationSeen } from './api'
-import { useToggle } from 'vporel/hooks'
+import { useToggle } from '@vporel/react/hooks'
 import {userSignal} from '../../globals'
 import { getSocket } from '../../socket-io'
-import PropTypes from 'vporel/prop-types'
+import PropTypes from '@vporel/js/prop-types'
 import { format } from 'date-fns'
-import { parseDate } from 'vporel/date'
-import LinkTag from 'vporel/components/LinkTag'
-import { onMobile } from 'vporel/standard'
-import Loader from 'vporel/components/Loader'
+import { parseDate } from '@vporel/js/date'
+import LinkTag from '@vporel/react/components/LinkTag'
+import { onMobile } from '@vporel/js/standard'
+import Loader from '@vporel/react/components/Loader'
 
 function countUnread(notifications){
     if(!notifications) return 0

@@ -1,4 +1,4 @@
-import { get, post, postWithFiles } from "vporel/api";
+import { get, post, postWithFiles } from "@vporel/js/api";
 
 export async function getSettings(){
     return await get("/api/settings");

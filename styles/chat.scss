@@ -1,0 +1,81 @@
+.chat{
+    position:fixed;
+    z-index:52;
+    background:white;
+    box-shadow: 1px 1px 3px rgba(black, .3);
+    padding:15px;
+    width:350px;
+    right:10px;
+    bottom:10px;
+    overflow: auto;
+    height: 75%;
+    max-height:0;
+    opacity:0;
+    border-radius: 10px;
+    transition: max-height .4s ease, visibility .3s ease, opacity .5s ease, bottom .4s ease;
+    visibility: hidden;
+    @include flex-column;
+    &.visible{
+        opacity:1;
+        max-height:100%;
+        visibility: visible;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 5px;
+        padding-right: .5rem;
+        @media #{$media-md}{
+            padding-right: 0;
+        }
+    }
+
+    .body{
+        height: 100%;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .chats-container, .messages-container{
+        height: 100%; width: 100%; position: absolute;
+    }
+    .messages-container{
+        opacity: 0; transition: all .3s ease; right: -102%; background: white;
+        @include flex-column;
+        overflow: hidden;
+        &.visible{right: 0; opacity: 1;}
+    }
+
+    @media #{$media-md-max}{
+        bottom: -100%;
+        width: 100%;
+        height: 90%;
+        right: 0;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 20px 20px 0 0;
+        border: none; 
+        opacity: 1;
+        .header{
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        &.visible{
+            bottom: 0;
+            max-height: 100%;
+        }
+       
+    }
+}
+
+.chat-overlay{ 
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(black, .3); z-index: 51; display: none;
+    @media #{$media-md-max}{
+        &.visible{display:block;}
+    }
+}

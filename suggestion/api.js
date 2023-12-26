@@ -1,4 +1,4 @@
-import {get, post, _delete} from "vporel/api"
+import {get, post, _delete} from "@vporel/js/api"
 
 export async function getSuggestions(){
     return await get("/api/suggestions")

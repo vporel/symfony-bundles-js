@@ -1,7 +1,7 @@
 import { h, createContext } from "preact";
 import { useEffect, useMemo, useState } from "preact/hooks";
 import { useLocation } from "react-router-dom";
-import { onMobile, standaloneMode } from "vporel/standard";
+import { onMobile, standaloneMode } from "@vporel/js/standard";
 import { ThemeProvider } from "@mui/material";
 
 

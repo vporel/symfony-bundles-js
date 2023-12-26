@@ -1,12 +1,12 @@
 import {Fragment, h} from "preact"
 import { useCallback, useEffect, useMemo, useState } from "preact/hooks"
-import Loader from "vporel/components/Loader"
-import FlexCenter from "vporel/components/display/FlexCenter"
-import _ from "vporel/translator"
+import Loader from "@vporel/react/components/Loader"
+import FlexCenter from "@vporel/react/components/FlexCenter"
+import _ from "@vporel/js/translator"
 import { searchUsers } from "~/tutoring/users/api"
 import { Image } from "react-bootstrap"
 import { userSignal } from "~/globals"
-import { onMobile } from "vporel/standard"
+import { onMobile } from "@vporel/js/standard"
 import ChatWidget from "./ChatWidget"
 
 /**

@@ -1,4 +1,4 @@
-import { get, post } from "vporel/api";
+import { get, post } from "@vporel/js/api";
 
 /**
  * @param {string} url Path on the server

@@ -1,9 +1,9 @@
 import {Fragment, h} from "preact"
-import { ButtonDanger } from "vporel/components/Button"
+import { ButtonDanger } from "@vporel/react/components/Button"
 import { useCallback, useContext, useState } from "preact/hooks"
 import SuggestionContext from "../../SuggestionContext"
 import { format } from "date-fns"
-import { parseDate } from "vporel/date"
+import { parseDate } from "@vporel/js/date"
 
 export default function Suggestion({suggestion}){
     const {deleteSuggestion} = useContext(SuggestionContext)

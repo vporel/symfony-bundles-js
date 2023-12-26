@@ -1,5 +1,5 @@
-import _ from "vporel/translator"
-import validators from "vporel/validators"
+import _ from "@vporel/js/translator"
+import validators from "@vporel/js/validators"
 
 export const userValidators = {
     firstName: val => validators.chain(validators.required(val), validators.stringLength(val, 3)),
